@@ -1,4 +1,4 @@
-import { readJSON } from '../utils/read_json_require.js';
+import { readJSON } from '../../utils/read_json_require.js';
 const puntosArg = readJSON('../datasources/puntos_arg.json');
 
 /**
@@ -8,18 +8,22 @@ const puntosArg = readJSON('../datasources/puntos_arg.json');
 export class ApiArgModel {
 
   /**
-   * 
    * @returns {Number}
    */
   static getLength = async () => {
     return puntosArg.values.length
   }
 
-  static getAll = async() => {
-    return puntosArg.values;
-  }
+  /**
+   * @returns {[]String[]} Array con array de Strings
+   */
+  static getAll = async() => puntosArg.values;
 
-
+/**
+ * Filtra por posición
+ * @param {Number} order 
+ * @returns {Object}
+ */
   static getOrder = async( order ) => {
     const formatedObj = {
       nombre: puntosArg.values[order][0],

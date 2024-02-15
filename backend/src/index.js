@@ -9,7 +9,11 @@ config({ path: process.ENV });
 
 const port = process.env.PORT ?? 3000;
 const app = express();
-
+const __dirname = fileURLToPath( import.meta.url );
+const pathToFrontEnd = path.join( __dirname, '..', '..', '..', 'dist' );
+// sets
+console.log( path.join( 'Path to fronend ===> ', pathToFrontEnd ) );
+app.use(express.static( pathToFrontEnd ))
 
 // Middlewares
 app.use(morgan('dev'));
