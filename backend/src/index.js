@@ -7,7 +7,7 @@ import apiArgRoutes from './router/api_arg.routs.js';
 
 config({ path: process.ENV });
 
-const port = process.env.PORT;
+const port = process.env.PORT ?? 3000;
 const app = express();
 
 
