@@ -1,4 +1,4 @@
-import { ApiArgModel } from "../../models/apis/api_arg.model.js";
+import { ApiArgModel } from "../../models/api_arg.model.js";
 
 export const getAll = async (req, res) => {
   res.json( await ApiArgModel.getAll() );
