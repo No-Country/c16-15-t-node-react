@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const collectionName = 'events';
+const collectionName = 'event';
 
 const eventsSchema = mongoose.Schema(
   {
@@ -14,4 +14,4 @@ const eventsSchema = mongoose.Schema(
   { versionKey: false }
 );
 
-export const eventsModel = mongoose.model('events', eventsSchema);
+export const eventsModel = mongoose.model(collectionName, eventsSchema);
