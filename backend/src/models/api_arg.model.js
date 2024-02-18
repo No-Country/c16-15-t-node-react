@@ -1,4 +1,4 @@
-import { readJSON } from '../../utils/read_json_require.js';
+import { readJSON } from '../utils/read_json_require.js';
 const puntosArg = readJSON('../datasources/puntos_arg.json');
 
 /**
