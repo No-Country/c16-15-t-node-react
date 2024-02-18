@@ -14,4 +14,4 @@ const eventsSchema = mongoose.Schema(
   { versionKey: false }
 );
 
-export const eventsModel = mongoose.model(collectionName, eventsSchema);
+export const eventModel = mongoose.model(collectionName, eventsSchema);
