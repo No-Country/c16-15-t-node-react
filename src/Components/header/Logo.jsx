@@ -3,7 +3,7 @@ function Logo() {
         <div>
             <img
                 src='/'
-                alt='/Logo'
+                alt='Logo EcoFinder'
             />
         </div>
     )

@@ -1,23 +1,26 @@
-import Proyects from "./Proyects"
+import RecyclingFairs from "./fairs/RecyclingFairs";
 
-function ProyectsGrid(){
+function FairsGrid(){
     return(
         <>
             <div className="main-content">
-                <Proyects
+                <RecyclingFairs
                     title='Feria I'
                     subtitle='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam praesentium architecto quasi sequi beatae voluptatibus earum inventore vel asperiores ab ipsa quo maiores rem qui, cupiditate ipsum delectus doloribus iste.'
                     image='/'
+                    date=''
                 />
-                <Proyects
+                <RecyclingFairs
                     title='Feria II'
                     subtitle='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam praesentium architecto quasi sequi beatae voluptatibus earum inventore vel asperiores ab ipsa quo maiores rem qui, cupiditate ipsum delectus doloribus iste.'
                     image='/'
+                    date=''
                 />
-                <Proyects
+                <RecyclingFairs
                     title='Feria III'
                     subtitle='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam praesentium architecto quasi sequi beatae voluptatibus earum inventore vel asperiores ab ipsa quo maiores rem qui, cupiditate ipsum delectus doloribus iste.'
                     image='/'
+                    date=''
                 />
             </div>
         
@@ -25,4 +28,4 @@ function ProyectsGrid(){
     )
 }
 
-export default ProyectsGrid;
+export default FairsGrid;
