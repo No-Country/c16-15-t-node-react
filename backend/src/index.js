@@ -7,6 +7,7 @@ import apiArgRoutes from './router/api_arg.routs.js';
 import connectDB from './db.js';
 import { userModel } from './models/userModel.js';
 import userRoutes from './router/user.routs.js';
+import { cors } from 'cors';
 config({ path: process.ENV });
 
 const port = process.env.PORT ?? 3000;
@@ -23,10 +24,10 @@ await connectDB();
 console.log(await userModel.find({}).exec())
 
 // Middlewares
+app.use(cors());
 app.use(morgan('dev'));
 app.use(express.static( pathToFrontEnd ));
 app.use(express.json());
-
 // routes
 app.use('/', userRoutes);
 app.use('/api', apiArgRoutes);
