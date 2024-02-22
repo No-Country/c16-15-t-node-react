@@ -1,6 +1,8 @@
 import React from "react";
-import "../styles/Logo.css";
-import logo_eco from "../assets/logo_eco"
+// import "../styles/Logo.css"; //* anteriormente
+import "/src/styles/Logo.css";
+// import "./assets/logo_eco"; //* anteriormente
+import logo_eco from "/src/assets/logo_eco.png"
 
 
 function Logo() {
