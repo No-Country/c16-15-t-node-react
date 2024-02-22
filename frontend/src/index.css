@@ -1,0 +1,36 @@
+    :root {
+        /* Hace que el contenedor principal ocupe por lo menos toda la altura de la ventana */
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header{
+        background-color: #337233;
+        color: #faf2e9;
+        padding: 1rem;
+    }
+    
+    /* style enlaces de navegación */
+    a {
+        color: #faf2e9;
+        text-decoration: none;
+        margin-right: 1rem;
+    }
+
+    a:hover{
+        color: #c5f957;
+    }
+    
+    footer {
+        background-color: #337233;
+        color: #faf2e9;
+        padding: 1rem;
+        margin-top: auto;
+    }

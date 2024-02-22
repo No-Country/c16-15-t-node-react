@@ -28,7 +28,10 @@ export const signUp = async(req, res) => {
 export const signIn = async(req, res) => {
   const { email: currentEmail, password: currentPassword } = req.body;
   try {
-    const user = await userModel.find({ currentEmail }).exec();
+    const user = await userModel.find({ email: currentEmail }).exec();
+    if ( user.length === 0 ){
+      return res.status(401).json({ ok:false, message: 'Invalid email or password' });
+    }
     const isValidPassword = await decrypt(currentPassword, user[0].password);
     if (!isValidPassword)
       res.status(401).json({ ok:false, message: 'Invalid email or password' });
