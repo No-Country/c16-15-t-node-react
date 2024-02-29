@@ -10,7 +10,7 @@ function MainMenu() {
     return (
         <nav>
             <ul>
-                <li><a a href="/">Inicio</a></li>
+                <li>< a href="/">Inicio</a></li>
                 <li>< a href="/">Quiénes somos?</a></li>
                 <li>< a href="/">Ferias</a></li>
                 <li>< a href="/">Contacto</a></li>

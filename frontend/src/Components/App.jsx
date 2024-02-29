@@ -3,6 +3,7 @@ import MainBanner from "./banner/MainBanner";
 import FairsGrid from "./fairs/FairsGrid";
 import AboutUs from "./variousServices/AboutUs";
 
+import Pointsmap from "./pointsmap/Pointsmap";
 
 function App() {
 
@@ -15,6 +16,8 @@ function App() {
       <AboutUs/>
       <br />
       <FairsGrid/>
+      <br />
+      <Pointsmap/>
     </>
   )
 }
