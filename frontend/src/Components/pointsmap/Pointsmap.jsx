@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
 import '/src/styles/Pointsmap.css';
+import 'leaflet/dist/leaflet.css';
 
 
 const urlApi = 'https://ecofinder.onrender.com/api';
