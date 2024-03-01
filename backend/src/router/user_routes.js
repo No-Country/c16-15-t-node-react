@@ -1,11 +1,13 @@
 import { Router } from "express";
-import { signIn, signUp } from "../controllers/users/login.controller.js";
+import { authLogin, signIn, signUp } from "../controllers/users/login.controller.js";
+import validateJWT from "../middleware/validateJwt.js";
 
 const router = Router();
 
 
 router.post('/signup', signUp);
 router.get('/signin', signIn);
+router.get('/authenticate', validateJWT, authLogin);
 
 
 const userRoutes = router;
