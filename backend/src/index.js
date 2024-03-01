@@ -31,11 +31,15 @@ app.use(express.json());
 app.use('/', userRoutes);
 app.use('/api', apiArgRoutes);
 
-// Error handler
-app.use('/error', (req, res, next, error) => {
-  console.error(error);
-  res.json(error.toString());
+// Catch error 400 bad request
+app.use((req, res) => {
+  // res.status(400).json({message: 'Bad Request, URL path malformed'})
+  res.status(400).send(`
+  <h1>Error 400</h1>
+  <p>Bad Request, URL path malformed</p>
+  `)
 })
+
 
 
 app.listen( port, () => {
