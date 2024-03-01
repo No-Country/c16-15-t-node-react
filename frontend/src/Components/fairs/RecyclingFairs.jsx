@@ -1,10 +1,14 @@
+import "../../../src/styles.css";
+
 function RecyclingFairs({title , subtitle , image, date}){
     return(
         <div>
-            <img src={image} alt={title} />
-            <h2>{title}</h2>
+            <div>
+                <img src={image} alt={title} />
+            </div>
+            <h3>{title}</h3>
             <p>{subtitle}</p>
-            <h3>Fecha: {date}</h3>
+            <h4>Fecha: {date}</h4>
         </div>
     )
 }

@@ -1,22 +1,28 @@
-{/*import { NavLink} from "react-router-dom"*/}
+import "../../../src/styles.css";
 
 
 function MainMenu() {
-
-    {/*const navigation = useNavigate()
-
-    const user = useContext(UserContext)*/}
-
     return (
-        <nav>
-            <ul>
-                <li><a a href="/">Inicio</a></li>
-                <li>< a href="/">Quiénes somos?</a></li>
-                <li>< a href="/">Ferias</a></li>
-                <li>< a href="/">Contacto</a></li>
-                <li></li>
-            </ul>
-        </nav>
+        <>
+            <span id="open-menu-button" className="jam jam-menu"></span>
+            <nav id="main-menu" className="main-menu">
+                <span id="close-menu-button" className="jam jam-close"></span>
+                <ul>
+                    <li>
+                        <a href="/">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/quienes-somos.html">¿Quiénes somos?</a>
+                    </li>
+                    <li>
+                        <a href="/proyectos.html">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </>
     )
 }
 

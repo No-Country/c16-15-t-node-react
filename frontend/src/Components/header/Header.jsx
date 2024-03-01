@@ -1,13 +1,16 @@
 import MainMenu from "./MainMenu";
 import Logo from "./Logo";
+import "../../../src/styles.css";
 
 function Header() {
     return (
-        <header>
+        <header className="main-header">
+            <div className="content-wrapper">
 
-            <Logo/>
-            <MainMenu />
-           
+                <Logo />
+                <MainMenu />
+
+            </div>
         </header>
     )
 }
