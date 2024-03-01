@@ -8,6 +8,7 @@ import Footer from "./footer/Footer";
 
 import "../../src/styles.css";
 
+import Pointsmap from "./pointsmap/Pointsmap";
 
 function App() {
 
@@ -26,6 +27,9 @@ function App() {
       <WorkWithUs/>
       <br/>
       <Footer/>
+      <br />
+      <Pointsmap/>
+
     </>
   )
 }
