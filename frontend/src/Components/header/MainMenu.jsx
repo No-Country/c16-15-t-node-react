@@ -24,5 +24,5 @@ function MainMenu() {
             </nav>
         </>
      )
-      
+}
 export default MainMenu;
