@@ -5,9 +5,6 @@ import AboutUs from "./ourServices/AboutUs";
 import FairsGrid from "./fairs/FairsGrid";
 import WorkWithUs from  "./workWithUs/WorkWithUs";
 import Footer from "./footer/Footer";
-
-import "../../src/styles.css";
-
 import Pointsmap from "./pointsmap/Pointsmap";
 
 function App() {
