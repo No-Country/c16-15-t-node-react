@@ -5,8 +5,8 @@ import  morgan from 'morgan';
 import express from 'express';
 import apiArgRoutes from './router/api_arg.routs.js';
 import connectDB from './db.js';
-import { userModel } from './models/userModel.js';
-import userRoutes from './router/user.routs.js';
+import userRoutes from './router/user_routes.js';
+import cors from 'cors';
 config({ path: process.ENV });
 
 const port = process.env.PORT ?? 3000;
@@ -19,10 +19,9 @@ const pathToFrontEnd = path.join( __dirname, '..', '..', '..', 'frontend', 'dist
 console.log( path.join( 'Path to fronend ===> ', pathToFrontEnd ) );
 
 await connectDB();
-// await userModel.deleteMany({ email: 'miemaildeprueba@yahoo.com' })
-console.log(await userModel.find({}).exec())
 
 // Middlewares
+app.use(cors());
 app.use(morgan('dev'));
 app.use(express.static( pathToFrontEnd ));
 app.use(express.json());

@@ -23,7 +23,6 @@ function MainMenu() {
                 </ul>
             </nav>
         </>
-    )
-}
-
+     )
+      
 export default MainMenu;

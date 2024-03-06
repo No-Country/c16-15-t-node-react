@@ -5,7 +5,7 @@ const router = Router();
 
 
 router.get('/', getAll);
-router.get('/:order', getOrder );
+router.get('/:id', getOrder );
 
 
 
