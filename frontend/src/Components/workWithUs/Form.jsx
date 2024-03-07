@@ -1,6 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Formulario from "./Formulario";
+import { Link } from "react-router-dom";
 
 function Form() {
   return (
@@ -18,9 +17,6 @@ function Form() {
           </li>
         </ul>
       </nav>
-      <Routes>
-        <Route path="/formulario" element={<Formulario />} />
-      </Routes>
     </div>
   );
 }

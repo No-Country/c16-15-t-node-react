@@ -1,17 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
-import Index from "./routes/Index";
-import About from "./routes/About";
-import Projects from "./routes/Projects";
-import MainBanner from "./banner/MainBanner";
-import OurServices from "./ourServices/OurServices";
-import AboutUs from "./ourServices/AboutUs";
-import FairsGrid from "./fairs/FairsGrid";
-import WorkWithUs from "./workWithUs/WorkWithUs";
-import Pointsmap from "./pointsmap/Pointsmap";
-import Contact from "./routes/Contact";
-import NotFound from "./routes/NotFound";
+import Index from "./routes/Index.route";
+import About from "./routes/About.route";
+import Projects from "./routes/Projects.route";
+import Contact from "./routes/Contact.route";
+import NotFound from "./routes/NotFound.route";
+import Formulario from "./workWithUs/Formulario";
 
 function App() {
   return (
@@ -24,6 +19,7 @@ function App() {
         <Route path="/proyectos" element={<Projects />} />
         <Route path="/contacto" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/formulario" element={<Formulario />} />
       </Routes>
       <Footer />
     </>
