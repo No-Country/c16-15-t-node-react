@@ -6,7 +6,7 @@ function MainBanner() {
         <section className="main-banner section-container">
             <div className="content-wrapper content">
                 <div className="container">
-                    <h1 className="title">Bienvenid@s a EcoFinder!</h1>
+                    <h1 className="title">Bienvenidos/as a EcoFinder!</h1>
                     <p className="subtitle">Deseas apoyar a la comunidad fomentando buenas practicas ambientales como el reciclaje? Nosotros te podemos ayudar con eso.</p>
                     <div>
                         <a className="button white ghost" href="/">Encuentra puntos de reciclaje aquí!</a>

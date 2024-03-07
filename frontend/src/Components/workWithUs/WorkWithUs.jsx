@@ -1,5 +1,5 @@
 import "../../../src/styles.css";
-import Form from "../workWithUs/Form";
+import Form from "./Form"
 
 function WorkWithUs() {
   return (
@@ -31,7 +31,6 @@ function WorkWithUs() {
           </div>
         </article>
         <article>
-          <br />
           <Form />
         </article>
       </div>

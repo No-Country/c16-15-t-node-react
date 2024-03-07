@@ -12,13 +12,13 @@ function MainMenu() {
                         <a href="/">Inicio</a>
                     </li>
                     <li>
-                        <a href="/quienes-somos.html">¿Quiénes somos?</a>
+                        <a href="/">¿Quiénes somos?</a>
                     </li>
                     <li>
-                        <a href="/proyectos.html">Proyectos</a>
+                        <a href="/">Proyectos</a>
                     </li>
                     <li>
-                        <a href="/contacto.html">Contacto</a>
+                        <a href="/">Contacto</a>
                     </li>
                 </ul>
             </nav>
