@@ -1,18 +1,66 @@
 import "../../../src/styles.css";
-import waste_reduction from "../../assets/waste_reduction.png"
+import misionImg from "../../assets/mision.png";
+import aboutUsImg from "../../assets/about_us.png";
+import visionImg from "../../assets/vision.png";
 
 function AboutUs() {
-
-    return (
-        <section className="section-container about-section">
-            <div className="content-wrapper">
-                <h2 className="title">SOBRE NOSOTROS</h2>
-                <p className="subtitle">Este aplicación web se ha creado con la finalidad de promover el reciclaje y concientizar acerca de las buenas prácticas ambientales, sobre la disposición final de residuos y/o desechos, así como la segunda vida útil que pueden tener algunos productos de consumo diario. Se parte de esta gran iniciativa y apóyanos con las actividades que ayuden a proteger nuestro planeta!</p>
-                <a href="/" className="button white ghost">Se parte de la comunidad</a>
+  return (
+    <main className="main">
+      <section className="about-us section-container">
+        <h1>Quienes somos?</h1>
+        <div className="content-wrapper">
+          <article className="about-item">
+            <div className="image-container">
+              <img
+                className="aboutus-image"
+                src={aboutUsImg}
+                alt="Sobre nosotros"
+              />
             </div>
-            <img className="background" src={waste_reduction} alt="Waste reduction"></img>
-        </section>
-    )
+            <div>
+              <h2>Sobre nosotros</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                nostrum nobis aut. Enim, qui quae optio commodi asperiores nam
+                necessitatibus neque quam doloremque quaerat aspernatur
+                adipisci, animi nihil consequatur recusandae!
+              </p>
+            </div>
+          </article>
+
+          <article className="about-item">
+            <div className="image-container">
+              <img src={misionImg} alt="Mision" />
+            </div>
+            <div>
+              <h2>Misión</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                nostrum nobis aut. Enim, qui quae optio commodi asperiores nam
+                necessitatibus neque quam doloremque quaerat aspernatur
+                adipisci, animi nihil consequatur recusandae!
+              </p>
+            </div>
+          </article>
+
+          <article className="about-item">
+            <div className="image-container">
+              <img src={visionImg} alt="Vision" />
+            </div>
+            <div>
+              <h2>Visión</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                nostrum nobis aut. Enim, qui quae optio commodi asperiores nam
+                necessitatibus neque quam doloremque quaerat aspernatur
+                adipisci, animi nihil consequatur recusandae!
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  );
 }
 
 export default AboutUs;
