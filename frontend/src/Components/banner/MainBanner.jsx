@@ -9,7 +9,7 @@ function MainBanner() {
                     <h1 className="title">Bienvenidos/as a EcoFinder!</h1>
                     <p className="subtitle">Deseas apoyar a la comunidad fomentando buenas practicas ambientales como el reciclaje? Nosotros te podemos ayudar con eso.</p>
                     <div>
-                        <a className="button white ghost" href="/">Encuentra puntos de reciclaje aquí!</a>
+                        <span className="button white ghost">Encuentra puntos de reciclaje aquí!</span>
                     </div>
                 </div>
                 <div className="container">

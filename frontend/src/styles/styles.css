@@ -896,6 +896,7 @@ h4 {
   display: grid;
   gap: 1rem;
   font-style: normal;
+  
 }
 
 @media screen and (min-width: 1024px) {
