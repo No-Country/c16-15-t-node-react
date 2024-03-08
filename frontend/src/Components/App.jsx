@@ -1,29 +1,26 @@
+import { Routes, Route } from "react-router-dom";
 import Header from "./header/Header";
-import MainBanner from "./banner/MainBanner";
-import OurServices from "./ourServices/OurServices";
-import AboutUs from "./ourServices/AboutUs";
-import FairsGrid from "./fairs/FairsGrid";
-import WorkWithUs from "./workWithUs/WorkWithUs";
 import Footer from "./footer/Footer";
-import Pointsmap from "./pointsmap/Pointsmap";
+import Index from "./routes/Index.route";
+import About from "./routes/About.route";
+import Projects from "./routes/Projects.route";
+import Contact from "./routes/Contact.route";
+import NotFound from "./routes/NotFound.route";
+import Formulario from "./workWithUs/Formulario";
 
 function App() {
   return (
     <>
       <Header />
       <br />
-      <MainBanner />
-      <br />
-      <OurServices />
-      <br />
-      <AboutUs />
-      <br />
-      <FairsGrid />
-      <br />
-      <WorkWithUs />
-      <br />
-      <Pointsmap />
-      <br />
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/nosotros" element={<About />} />
+        <Route path="/proyectos" element={<Projects />} />
+        <Route path="/contacto" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
+        <Route path="/formulario" element={<Formulario />} />
+      </Routes>
       <Footer />
     </>
   );
