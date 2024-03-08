@@ -549,7 +549,7 @@ h4 {
 
 
 
-/* ----- FERIAS ACTIVAS ----- */
+/* ----- SERVICIOS ----- */
 
 .last-projects {
   display: flex;
@@ -625,11 +625,11 @@ h4 {
 
 .project-item article>div:first-of-type p {
   display: flex;
-  text-align: center;
   margin-bottom: 0;
   opacity: 0.8;
   font-size: var(--small-font-size);
   justify-content: center;
+  text-align: center;
 }
 
 
@@ -776,7 +776,7 @@ h4 {
 .about-us .content-wrapper {
   display: grid;
   gap: var(--block-spacing);
-  --max-width: 950px;
+  --max-width: 1000px;
 }
 
 .about-item {
@@ -801,7 +801,7 @@ h4 {
 
   .about-item {
     grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+    gap: 2.5rem;
     text-align: left;
   }
 
@@ -825,9 +825,22 @@ h4 {
 
 .about-item img {
   border-radius: var(--border-radius);
+  width: 85%;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.4s ease;
 }
 
-.about-team {
+.about-item img:hover {
+  transform: scale(1.1);
+}
+
+
+.services-section h3 {
+  margin-bottom: var(--block-spacing);
+}
+
+.about-us-team {
   display: grid;
   gap: 2rem;
   justify-content: center;
@@ -835,28 +848,16 @@ h4 {
 
 @media screen and (min-width: 1024px) {
 
-  .about-team{
+  .about-us-team {
     grid-template-columns: repeat(1, 1fr);
   }
 
 }
 
-.about-team-img {
-  width: 85%;
-  border-radius: var(--border-radius);
-  overflow: hidden;
-  box-shadow: var(--box-shadow);
-  transition: transform 0.4s ease;
-}
-
-.about-team-img:hover {
-  transform: scale(1.1);
-}
-
 .social-networks-team a {
   padding: 0.1rem;
   color: var(--text-color);
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-decoration: none;
 }
 
@@ -895,6 +896,7 @@ h4 {
   display: grid;
   gap: 1rem;
   font-style: normal;
+  
 }
 
 @media screen and (min-width: 1024px) {

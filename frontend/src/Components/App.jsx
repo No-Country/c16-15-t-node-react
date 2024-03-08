@@ -6,7 +6,7 @@ import About from "./routes/About.route";
 import Projects from "./routes/Projects.route";
 import Contact from "./routes/Contact.route";
 import NotFound from "./routes/NotFound.route";
-import Formulario from "./workWithUs/Formulario";
+import Form from "./workWithUs/Form"
 
 function App() {
   return (
@@ -19,8 +19,9 @@ function App() {
         <Route path="/proyectos" element={<Projects />} />
         <Route path="/contacto" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
-        <Route path="/formulario" element={<Formulario />} />
+        <Route path="/Form" element={<Form />} />
       </Routes>
+      <br/>
       <Footer />
     </>
   );

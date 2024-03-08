@@ -1,9 +1,10 @@
 import MainBanner from "../banner/MainBanner";
 import OurServices from "../ourServices/OurServices";
-// import AboutUs from "../ourServices/AboutUs";
-// import FairsGrid from "../fairs/FairsGrid";
+import AboutUs from "../ourServices/AboutUs";
+import FairsGrid from "../fairs/FairsGrid";
 import WorkWithUs from "../workWithUs/WorkWithUs";
 import Pointsmap from "../pointsmap/Pointsmap";
+import ResumeTeam from "../ourServices/ResumeTeam";
 
 const Index = () => {
   return (
@@ -12,15 +13,15 @@ const Index = () => {
       <br />
       <OurServices />
       <br />
-      {/* <AboutUs />
+      <ResumeTeam/>
       <br />
-      <FairsGrid />
-      <br /> */}
+      {/*<FairsGrid />*/}
+      <br />
       <WorkWithUs />
       <br />
-      <Pointsmap />
+      {/*<Pointsmap />*/}
       <br />
-      <br />
+      
     </>
   );
 };
